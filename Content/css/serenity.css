@@ -1,0 +1,201 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    background-image: url('../Images/light-sharp.png');
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.fa-25x {
+    font-size: 2.5em;
+}
+
+#background-video {
+    width: 100%;
+    height: 116px;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+}
+
+.navbar {
+    background: black;
+    /*box-shadow: 0px 5px 10px;*/
+}
+.navbar-nav {
+    align-items: right;
+    text-align: center;
+}
+.nav-link,
+.navbar-brand {
+    cursor: pointer;
+}
+.nav-link {
+    margin-right: 1em !important;
+    color: white !important;
+    font-weight: 500;
+}
+.nav-link:hover {
+    color: #ef7daf !important;
+    transition-duration: 0.2s;
+}
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+.heading-text {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+.description-text {
+    font-family: "Bai Jamjuree";
+}
+
+#topHeader {
+    background-image: linear-gradient(0deg, rgba(51,51,51,0.65),rgba(51,51,51,0.65)), url('../Images/top_background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#topHeader .description-text {
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+
+#topHeader ul{
+    list-style-type: none;
+    padding-left: 0px;
+}
+
+#topHeader li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: center;
+}
+
+#topHeader li a {
+    color: white;
+}
+
+#topHeader li a:hover {
+    color: #ef7daf !important;
+}
+
+#topHeader .imp-links img{
+    width: 50px;
+    margin: 0 9px;
+}
+
+#topHeader .imp-links img:hover {
+    filter: invert(40%) sepia(14%) saturate(1569%) hue-rotate(284deg) brightness(100%) contrast(88%);
+}
+
+@keyframes come-down {
+    to {transform: translateY(0px);}
+}
+
+@keyframes left-in {
+    to {transform: translateX(0px);}
+}
+
+@keyframes right-in {
+    to {transform: translateX(0px);}
+}
+
+.serenity-button-pink {
+    background-color: #e52f7f;
+    color: white;
+    text-transform: uppercase;
+    font-size: 1.125rem;
+    letter-spacing: 2px;
+    border-style: none;
+    text-decoration: none;
+    padding: 15px 32px;
+    border-radius: 32px;
+}
+
+.serenity-button-pink:hover {
+    color: white !important;
+    box-shadow: 0px 0px 14px 4px #ef7daf;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    video {
+        display: none;
+    }
+
+    #topHeader {
+        padding-top: 115px;
+        background-size: 400%;
+        padding-bottom: 80px;
+    }
+}
+
+
+@media only screen and (min-width: 769px) {
+
+    #topHeader {
+        padding-top: 115px;
+        background-size: 100%;
+        padding-bottom: 100px;
+    }
+
+    #topHeader .topHeader-branding {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: bold;
+        color: white;
+        font-size: 1.125rem;
+        padding-top: 40px;
+        transform: translateY(-40px);
+        transition-delay: 1s;
+        animation: come-down 1s forwards;
+    }
+
+    #topHeader .topHeader-description-large {
+        font-size: 4.5rem !important;
+        font-weight: 400 !important;
+        transform: translateX(-500px);
+        transition-delay: 1s;
+        animation: left-in 1s forwards;
+    }
+    
+    #topHeader .topHeader-description-small {
+        padding-top: 50px;
+        line-height: 1.7;
+        transform: translateX(500px);
+        transition-delay: 1s;
+        animation: right-in 1s forwards;
+    }
+    
+    #topHeader .topHeader-important {
+        color: white;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.2;
+        transform: translateX(-200px);
+        transition-delay: 1s;
+        animation: left-in 1s forwards;
+    }
+
+    #topHeader .topHeader-learn-button {
+        margin-top: 75px;
+        transform: translateX(200px);
+        transition-delay: 2s;
+        animation: right-in 1s forwards;
+    }
+
+}
