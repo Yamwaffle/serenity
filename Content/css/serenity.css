@@ -91,7 +91,7 @@ body {
 
 #topHeader .imp-links img{
     width: 50px;
-    margin: 0 9px;
+    margin: 0 8px;
 }
 
 #topHeader .imp-links img:hover {
@@ -141,6 +141,38 @@ body {
         padding-top: 115px;
         background-size: 400%;
         padding-bottom: 80px;
+    }
+
+    #topHeader .topHeader-branding {
+        text-transform: uppercase;
+        letter-spacing: 4px;
+        font-weight: bold;
+        padding-top: 100px;
+        color: white;
+        font-size: 1.125rem;
+    }
+
+    #topHeader .topHeader-description-large {
+        padding-top: 15px;
+        font-size: 3.5rem !important;
+        font-weight: 400 !important;
+        line-height: 1;
+    }
+    
+    #topHeader .topHeader-description-small {
+        padding-top: 50px;
+        line-height: 1.7;
+    }
+    
+    #topHeader .topHeader-important {
+        color: white;
+        font-weight: 400;
+        font-size: 1.25rem;
+        line-height: 1.2;
+    }
+
+    #topHeader .topHeader-learn-button {
+        margin-top: 75px;
     }
 }
 
