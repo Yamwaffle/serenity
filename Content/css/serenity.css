@@ -1,4 +1,5 @@
 html {
+  font-family: "Open Sans";
   font-size: 16px;
 }
 body {
@@ -30,7 +31,7 @@ body {
 }
 .nav-link {
   margin-right: 1em !important;
-  color: white !important;
+  color: #9B9B9B !important;
   font-weight: 500;
 }
 .nav-link:hover {
@@ -40,11 +41,22 @@ body {
 .navbar-collapse {
   justify-content: flex-end;
 }
-.heading-text {
+.navbar-brand span {
+  color: #9B9B9B;
+  text-decoration: none;
+  margin-left: 15px;
+  font-weight: 500;
+}
+.navbar-brand span:hover {
+  color: #9B9B9B;
+  text-decoration: none;
+}
+.heading-text,
+.nav-link {
   font-family: "Bai Jamjuree";
 }
 .description-text {
-  font-family: 'Open Sans', sans-serif !important;
+  font-family: "Open Sans", sans-serif !important;
 }
 #topHeader {
   background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url('../images/top_background.jpg');
@@ -76,8 +88,7 @@ body {
   color: #ef7daf !important;
 }
 #topHeader .imp-links img {
-  width: 45px;
-  margin: 0 7px;
+  width: 40px;
 }
 #topHeader .imp-links img:hover {
   filter: invert(40%) sepia(14%) saturate(1569%) hue-rotate(284deg) brightness(100%) contrast(88%);
@@ -97,6 +108,30 @@ body {
     transform: translateX(0px);
   }
 }
+#about {
+  background: linear-gradient(180deg, white 0%, rgba(84, 90, 248, 0.76) 50%, white 100%);
+}
+#about .artist-type {
+  text-transform: uppercase;
+  color: white;
+  font-size: 1.5rem;
+}
+#about .square-pink {
+  background-color: #ef7daf;
+  width: 100%;
+}
+#about .square-blue {
+  background-color: #545af8;
+  width: 100%;
+}
+#about .square-green {
+  background-color: #008279;
+  width: 100%;
+}
+#about .square-gray {
+  background-color: #999999;
+  width: 100%;
+}
 .serenity-button-pink {
   background-color: #e52f7f;
   color: white;
@@ -114,8 +149,33 @@ body {
   transition: 0.2s;
   text-decoration: none;
 }
+.serenity-button-blue {
+  background-color: #0086D9;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  border-style: none;
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 32px;
+}
+.serenity-button-pink:hover {
+  color: white !important;
+  box-shadow: 0px 0px 14px 4px #59a6d6;
+  transition: 0.2s;
+  text-decoration: none;
+}
 #tokenomics {
   background-color: white;
+}
+.contract-address {
+  background-color: rgba(0, 0, 0, 0.1);
+  font-family: "Open Sans";
+  color: black;
+  border-radius: 12px;
+  padding: 15px;
+  font-size: 0.9em;
 }
 @media only screen and (max-width: 896px) {
   video {
@@ -125,6 +185,9 @@ body {
     padding-top: 115px;
     background-size: 400%;
     padding-bottom: 80px;
+  }
+  #topHeader .navbar-brand span {
+    margin-left: 10px;
   }
   #topHeader .topHeader-branding {
     text-transform: uppercase;
@@ -158,12 +221,19 @@ body {
   .section-title {
     font-size: 2.5em;
   }
+  #about .square {
+    height: 285px;
+    padding-top: 50px;
+  }
 }
 @media only screen and (min-width: 897px) {
   #topHeader {
     padding-top: 115px;
     background-size: 100%;
     padding-bottom: 100px;
+  }
+  #topHeader .navbar-brand span {
+    margin-left: 15px;
   }
   #topHeader .topHeader-branding {
     text-transform: uppercase;
@@ -182,6 +252,7 @@ body {
     transform: translateX(-500px);
     transition-delay: 1s;
     animation: left-in 1s forwards;
+    margin-bottom: 30px;
   }
   #topHeader .topHeader-description-small {
     padding-top: 50px;
@@ -207,5 +278,9 @@ body {
   }
   .section-title {
     font-size: 4.5em;
+  }
+  #about .square {
+    height: 285px;
+    padding-top: 55px;
   }
 }
