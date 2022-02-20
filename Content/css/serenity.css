@@ -52,12 +52,6 @@ html {
 .description-text {
   font-family: "Open Sans", sans-serif !important;
 }
-#topHeader {
-  background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url('../images/top_background.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-}
 #topHeader .heading-text {
   color: white;
   font-size: 1.25rem;
@@ -191,6 +185,9 @@ html {
     display: none;
   }
   #topHeader {
+    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url('../images/top_background.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 115px;
     background-size: 400%;
     padding-bottom: 80px;
@@ -253,6 +250,10 @@ html {
 }
 @media only screen and (min-width: 897px) {
   #topHeader {
+    background-image: linear-gradient(0deg, rgba(51, 51, 51, 0.65), rgba(51, 51, 51, 0.65)), url('../images/top_background.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
     padding-top: 115px;
     background-size: 100%;
     padding-bottom: 100px;
@@ -303,13 +304,6 @@ html {
   }
   .section-title {
     font-size: 4.5em;
-  }
-  #tokenomics::before {
-    content: "";
-    display: block;
-    margin-top: -200px;
-    padding-top: 200px;
-    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 100%);
   }
   #about .square {
     height: 285px;
