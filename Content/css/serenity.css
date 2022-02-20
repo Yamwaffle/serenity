@@ -163,7 +163,7 @@ html {
   padding: 15px 32px;
   border-radius: 32px;
 }
-.serenity-button-pink:hover {
+.serenity-button-blue:hover {
   color: white !important;
   box-shadow: 0px 0px 14px 4px #59a6d6;
   transition: 0.2s;
@@ -179,6 +179,9 @@ html {
   border-radius: 12px;
   padding: 15px;
   font-size: 0.9em;
+}
+.learn-button {
+  margin-top: 75px;
 }
 @media only screen and (max-width: 896px) {
   video {
@@ -221,9 +224,6 @@ html {
     font-size: 1.25rem;
     line-height: 1.2;
   }
-  #topHeader .topHeader-learn-button {
-    margin-top: 75px;
-  }
   .section-title {
     font-size: 2.5em;
   }
@@ -238,10 +238,7 @@ html {
     position: relative;
   }
   #about .section-title {
-    color: white;
-    position: absolute;
-    top: 80px;
-    z-index: 100;
+    color: black;
   }
   #about .square {
     height: 285px;
@@ -304,6 +301,9 @@ html {
   }
   .section-title {
     font-size: 4.5em;
+  }
+  .section-subtitle {
+    font-size: 3em;
   }
   #about .square {
     height: 285px;
