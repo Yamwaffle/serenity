@@ -8,8 +8,8 @@
     <meta name="description" content="Serenity Token combines knowledge with expertise, design with creativity, and meaning with magic in order to connect talented artists with the crypto market as well as with our unique community of investors.">
     <meta name="page_type" content="np-template-header-footer-from-plugin">
     
-    <link rel="icon" href="./Content/Images/SerenityLogo_32.png" size="32x32">
-    <link rel="icon" href="./Content/Images/SerenityLogo_128.png" size="128x128">
+    <link rel="icon" href="./Content/images/SerenityLogo_32.png" size="32x32">
+    <link rel="icon" href="./Content/images/SerenityLogo_128.png" size="128x128">
 
     <link rel="stylesheet" href="Content/css/serenity.css" media="screen">
 
@@ -42,7 +42,7 @@
 }</script>
   </head>
   <body id="serenityBody">
-    <nav class="navbar navbar-expand-md navbar-expand-sm fixed-top">
+    <nav id="serenity-navbar" class="navbar navbar-expand-md navbar-expand-sm fixed-top">
       <div class="container">
         <video id="background-video" data-autoplay="1" muted="" autoplay="autoplay" playsinline="">
           <source src="Content/files/Websitevid0001-0150.mp4" type="video/mp4">
@@ -60,10 +60,10 @@
                     <a class="nav-link" href="#serenityBody">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#about">About</a>
+                    <a class="nav-link" href="#tokenomics">Tokenomics</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#tokenomics">Tokenomics</a>
+                    <a class="nav-link" href="#about">About</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="Content/files//SerenityWhitepaper.pdf" target="_blank">Whitepaper</a>
@@ -90,7 +90,7 @@
               </div>
             </div>
             <div class="row description-text topHeader-important">
-              <div class="col-md-2 d-md-none"></div>
+              <div class="col-md-2 d-none d-md-block"></div>
               <div class="col-md-8 col-sm-12 text-center">
                 <ul>
                   <li><a href="https://www.facebook.com/profile.php?id=100076197709499" title="FB" target="_blank"><i class="fab fa-facebook fa-2x"></i></a></li>
@@ -100,7 +100,7 @@
                   <li><a href="https://discord.gg/UQgQq9sQaK" title="Discord" target="_blank"><i class="fab fa-discord fa-2x"></i></a></li>
                 </ul>
               </div>
-              <div class="col-md-2 d-md-none"></div>
+              <div class="col-md-2 d-none d-md-block"></div>
               <div class="col-sm-12 text-center">Important Links and Information</div>
               <div class="col-sm-12 text-center" style="margin-top: 20px;">
                 <ul>
@@ -128,44 +128,6 @@
         </div>
       </div>
     </section>
-    <section id="about">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 heading-text text-center section-title">Art Can Be Anything</div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 col-sm-12" style="padding-left: 0px; padding-right: 0px;">
-            <img src="Content/images/dff.jpg" style="width: 100%; filter: brightness(0.55); opacity: 0.75;">
-          </div>
-          <div class="col-md-6 col-sm-12">
-            <div class="row">
-              <div class="col-md-6 col-sm-12 text-center square-pink square">
-                <img src="Content/images/icon_singers.png">
-                <br/>
-                <span class="heading-text artist-type text-center">Singers</span>
-              </div>
-              <div class="col-md-6 col-sm-12 text-center square-green square">
-                <img src="Content/images/icon_paint.png">
-                <br/>
-                <span class="heading-text artist-type text-center">Artists</span>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6 col-sm-12 text-center square-gray square">
-                <img src="Content/images/icon_graphics.png">
-                <br/>
-                <span class="heading-text artist-type text-center">Grahpic Designers</span>
-              </div>
-              <div class="col-md-6 col-sm-12 text-center square-blue square">
-                <img src="Content/images/icon_talent.png">
-                <br/>
-                <span class="heading-text artist-type text-center">All Talent</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
     <section id="tokenomics">
       <div class="container">
         <div class="row">
@@ -178,6 +140,44 @@
         </div>
         <div class="row">
           <div class="col-sm-12 description-text text-center">For each transaction, there's a 15% total tax.</div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="section-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 heading-text text-center section-title">Art Can Be Anything</div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 col-sm-12 sculpture slide" style="padding-left: 0px; padding-right: 0px;">
+            <img src="Content/images/dff.jpg" style="width: 100%; filter: brightness(0.55); opacity: 0.75;">
+          </div>
+          <div class="col-md-6 col-sm-12">
+            <div class="row">
+              <div class="col-md-6 col-sm-12 text-center square-pink square slide singers">
+                <img src="Content/images/icon_singers.png">
+                <br/>
+                <span class="heading-text artist-type text-center">Singers</span>
+              </div>
+              <div class="col-md-6 col-sm-12 text-center square-green square slide artists">
+                <img src="Content/images/icon_paint.png">
+                <br/>
+                <span class="heading-text artist-type text-center">Artists</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6 col-sm-12 text-center square-gray square slide graphics">
+                <img src="Content/images/icon_graphics.png">
+                <br/>
+                <span class="heading-text artist-type text-center">Grahpic Designers</span>
+              </div>
+              <div class="col-md-6 col-sm-12 text-center square-blue square slide talent">
+                <img src="Content/images/icon_talent.png">
+                <br/>
+                <span class="heading-text artist-type text-center">All Talent</span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
