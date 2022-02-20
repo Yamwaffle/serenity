@@ -1,13 +1,7 @@
 html {
   font-family: "Open Sans";
   font-size: 16px;
-}
-body {
-  background-image: url('../images/light-sharp.png');
-  background-attachment: fixed;
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
+  scroll-behavior: smooth;
 }
 #background-video {
   width: 100%;
@@ -103,13 +97,28 @@ body {
     transform: translateX(0px);
   }
 }
+@keyframes left-in-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
 @keyframes right-in {
   to {
     transform: translateX(0px);
   }
 }
-#about {
-  background: linear-gradient(180deg, white 0%, rgba(84, 90, 248, 0.76) 50%, white 100%);
+@keyframes right-in-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
 }
 #about .artist-type {
   text-transform: uppercase;
@@ -221,6 +230,22 @@ body {
   .section-title {
     font-size: 2.5em;
   }
+  .section-header::before {
+    content: "";
+    display: block;
+    background: transparent;
+    height: 90px;
+    margin: -90px 0 0;
+  }
+  #about {
+    position: relative;
+  }
+  #about .section-title {
+    color: white;
+    position: absolute;
+    top: 80px;
+    z-index: 100;
+  }
   #about .square {
     height: 285px;
     padding-top: 50px;
@@ -279,8 +304,43 @@ body {
   .section-title {
     font-size: 4.5em;
   }
+  #tokenomics::before {
+    content: "";
+    display: block;
+    margin-top: -200px;
+    padding-top: 200px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0) 0%, white 100%);
+  }
   #about .square {
     height: 285px;
     padding-top: 55px;
+  }
+  #about .slide {
+    opacity: 0;
+  }
+  #about .sculpture.active {
+    transform: translateX(-500px);
+    transition-delay: 1s;
+    animation: left-in-fade 1s forwards;
+  }
+  #about .singers.active {
+    transform: translateX(100px);
+    transition-delay: 1s;
+    animation: right-in-fade 1s forwards ease;
+  }
+  #about .artists.active {
+    transform: translateX(200px);
+    transition-delay: 1s;
+    animation: right-in-fade 1s forwards ease;
+  }
+  #about .graphics.active {
+    transform: translateX(300px);
+    transition-delay: 1s;
+    animation: right-in-fade 1s forwards ease;
+  }
+  #about .talent.active {
+    transform: translateX(400px);
+    transition-delay: 1s;
+    animation: right-in-fade 1s forwards ease;
   }
 }
