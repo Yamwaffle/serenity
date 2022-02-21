@@ -114,6 +114,14 @@ html {
     opacity: 1;
   }
 }
+@keyframes fading-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 #about .artist-type {
   text-transform: uppercase;
   color: white;
@@ -169,19 +177,80 @@ html {
   transition: 0.2s;
   text-decoration: none;
 }
+.serenity-button-yellow {
+  background-color: #C69C47;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  letter-spacing: 2px;
+  border-style: none;
+  text-decoration: none;
+  padding: 15px 32px;
+  border-radius: 32px;
+}
+.serenity-button-yellow:hover {
+  color: white !important;
+  box-shadow: 0px 0px 14px 4px #FFD967;
+  transition: 0.2s;
+  text-decoration: none;
+}
+.serenity-dots {
+  opacity: 0.5;
+  height: 50px;
+  margin: 15px;
+  opacity: 0;
+}
+.serenity-dots.active {
+  transition-delay: 1s;
+  animation: fading-in 2s forwards ease;
+}
 #tokenomics {
   background-color: white;
+  margin-bottom: 25px;
+}
+#tokenomics .description-text a {
+  font-size: 0.9rem;
+  color: #e52f7f;
+  text-decoration: none;
+}
+#tokenomics .description-text a:hover {
+  text-decoration: none;
+  color: #ef7daf;
+}
+#tokenomics .tokenomics-box {
+  border: 2px solid #9B9B9B;
+  border-radius: 15px;
+  padding: 15px 0;
+  opacity: 0;
+}
+#tokenomics .tokenomics-box.active {
+  transition-delay: 1s;
+  animation: fading-in 2s forwards ease;
+}
+#tokenomics .extend-lines {
+  opacity: 0;
+}
+#tokenomics .extend-lines.active {
+  transition-delay: 1s;
+  animation: fading-in 2s forwards ease;
 }
 .contract-address {
   background-color: rgba(0, 0, 0, 0.1);
   font-family: "Open Sans";
   color: black;
   border-radius: 12px;
-  padding: 15px;
+  padding: 15px 5px !important;
   font-size: 0.9em;
 }
 .learn-button {
   margin-top: 75px;
+}
+.rotateimg180 {
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
 }
 @media only screen and (max-width: 896px) {
   video {
@@ -233,6 +302,13 @@ html {
     background: transparent;
     height: 90px;
     margin: -90px 0 0;
+  }
+  #tokenomics .tokenomics-box {
+    margin: 0 15px !important;
+  }
+  #tokenomics .learn-button {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
   #about {
     position: relative;
@@ -304,6 +380,9 @@ html {
   }
   .section-subtitle {
     font-size: 3em;
+  }
+  #tokenomics .learn-button {
+    margin-bottom: 75px;
   }
   #about .square {
     height: 285px;
