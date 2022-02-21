@@ -114,6 +114,15 @@ html {
     opacity: 1;
   }
 }
+@keyframes bottom-up-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @keyframes fading-in {
   from {
     opacity: 0;
@@ -121,6 +130,9 @@ html {
   to {
     opacity: 1;
   }
+}
+#about {
+  padding-bottom: 35px;
 }
 #about .artist-type {
   text-transform: uppercase;
@@ -194,6 +206,20 @@ html {
   transition: 0.2s;
   text-decoration: none;
 }
+.serenity-button-blue-glow {
+  background: #07172E;
+  border: 3px solid #2081E2;
+  box-sizing: border-box;
+  border-radius: 100px;
+  padding: 20px;
+  color: white !important;
+}
+.serenity-button-blue-glow:hover {
+  box-shadow: 0px 0px 16px -2px #49C8FF;
+  color: white !important;
+  transition-duration: 0.2s;
+  text-decoration: none;
+}
 .serenity-dots {
   opacity: 0.5;
   height: 50px;
@@ -205,8 +231,7 @@ html {
   animation: fading-in 2s forwards ease;
 }
 #tokenomics {
-  background-color: white;
-  margin-bottom: 25px;
+  padding-bottom: 25px;
 }
 #tokenomics .description-text a {
   font-size: 0.9rem;
@@ -234,6 +259,135 @@ html {
   transition-delay: 1s;
   animation: fading-in 2s forwards ease;
 }
+#nft {
+  background-image: url('../images/background_nft_50.png');
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 35px;
+}
+#team .profile-holder {
+  height: 200px;
+  background: white;
+  margin: 0 auto;
+}
+#team .profile-thumb {
+  height: 200px;
+  width: 200px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: pointer;
+  position: relative;
+}
+#team .profile-thumb img {
+  display: block;
+  height: 100%;
+  width: auto !important;
+  margin: 0 auto;
+  -moz-transition: all 0.6s;
+  -webkit-transition: all 0.6s;
+  transition: all 0.6s;
+  transform: translate3d(0px, 0px, 0px);
+}
+#team .profile-name {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  margin-top: 15px;
+}
+#team .profile-designation {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+}
+#team .profile-social {
+  font-size: 1.5em;
+}
+#team .profile-social ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#team .profile-social li {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#team .profile-social hr {
+  width: 50% !important;
+  color: black;
+}
+#team .profile-social a {
+  color: #9B9B9B !important;
+}
+#team .profile-social a:hover {
+  color: #ef7daf !important;
+}
+#profileModal .profile-photo .photo {
+  height: 250px;
+  width: 250px;
+  overflow: hidden;
+  margin: 0 auto;
+  cursor: auto;
+  position: relative;
+}
+#profileModal .profile-photo .photo img {
+  display: block;
+  height: 100%;
+  width: auto !important;
+  margin: 0 auto;
+}
+#profileModal .profile-photo .profile-name {
+  font-family: "Bai Jamjuree";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: #000000;
+}
+#profileModal .profile-photo .profile-designation {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  font-feature-settings: 'liga' off;
+  color: #000000;
+}
+#profileModal .profile-photo .profile-social ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#profileModal .profile-photo .profile-social li {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#profileModal .profile-photo .profile-social a {
+  color: #9B9B9B !important;
+}
+#profileModal .profile-photo .profile-social a:hover {
+  color: #ef7daf !important;
+}
+#profileModal ul a {
+  color: black;
+  cursor: pointer;
+}
+#profileModal .profile-social hr {
+  border: 1px solid #5B5B5B;
+  width: 80% !important;
+}
+#profileModal ul a:hover {
+  color: white!important;
+}
 .contract-address {
   background-color: rgba(0, 0, 0, 0.1);
   font-family: "Open Sans";
@@ -245,6 +399,9 @@ html {
 .learn-button {
   margin-top: 75px;
 }
+.section-subtitle {
+  margin-top: 35px;
+}
 .rotateimg180 {
   -webkit-transform: rotate(180deg);
   -moz-transform: rotate(180deg);
@@ -253,7 +410,7 @@ html {
   transform: rotate(180deg);
 }
 @media only screen and (max-width: 896px) {
-  video {
+  #serenity-navbar video {
     display: none;
   }
   #topHeader {
@@ -294,14 +451,17 @@ html {
     line-height: 1.2;
   }
   .section-title {
-    font-size: 2.5em;
+    font-size: 2em;
+  }
+  .section-subtitle {
+    font-size: 1.75em;
   }
   .section-header::before {
     content: "";
     display: block;
     background: transparent;
-    height: 90px;
-    margin: -90px 0 0;
+    height: 0px;
+    margin: 0px 0 0;
   }
   #tokenomics .tokenomics-box {
     margin: 0 15px !important;
@@ -319,6 +479,35 @@ html {
   #about .square {
     height: 285px;
     padding-top: 50px;
+    opacity: 0;
+  }
+  #about .sculpture {
+    opacity: 0;
+  }
+  #about .sculpture.active {
+    transform: translateY(200px);
+    transition-delay: 1s;
+    animation: bottom-up-fade 1s forwards;
+  }
+  #about .singers.active {
+    transform: translateY(200px);
+    transition-delay: 1s;
+    animation: bottom-up-fade 1s forwards ease;
+  }
+  #about .artists.active {
+    transform: translateY(200px);
+    transition-delay: 1s;
+    animation: bottom-up-fade 1s forwards ease;
+  }
+  #about .graphics.active {
+    transform: translateY(200px);
+    transition-delay: 1s;
+    animation: bottom-up-fade 1s forwards ease;
+  }
+  #about .talent.active {
+    transform: translateY(200px);
+    transition-delay: 1s;
+    animation: bottom-up-fade 1s forwards ease;
   }
 }
 @media only screen and (min-width: 897px) {
@@ -381,8 +570,16 @@ html {
   .section-subtitle {
     font-size: 3em;
   }
+  #tokenomics {
+    background: linear-gradient(180deg, white 90%, #E0EAEF 100%);
+  }
   #tokenomics .learn-button {
     margin-bottom: 75px;
+  }
+  #about {
+    background-image: url('../images/background_about_50.png');
+    background-size: cover;
+    background-position: center;
   }
   #about .square {
     height: 285px;
