@@ -260,10 +260,11 @@ html {
   animation: fading-in 2s forwards ease;
 }
 #nft {
-  background-image: url('../images/background_nft_50.png');
+  background-image: url('../images/background_nft.png');
   background-size: cover;
   background-position: center;
   padding-bottom: 35px;
+  color: white;
 }
 #team .profile-holder {
   height: 200px;
@@ -273,7 +274,6 @@ html {
 #team .profile-thumb {
   height: 200px;
   width: 200px;
-  border-radius: 100%;
   overflow: hidden;
   margin: 0 auto;
   cursor: pointer;
@@ -282,6 +282,7 @@ html {
 #team .profile-thumb img {
   display: block;
   height: 100%;
+  border-radius: 100%;
   width: auto !important;
   margin: 0 auto;
   -moz-transition: all 0.6s;
@@ -329,6 +330,9 @@ html {
 #team .profile-social a:hover {
   color: #ef7daf !important;
 }
+#profileModal .modal-body {
+  padding: 0px;
+}
 #profileModal .profile-photo .photo {
   height: 250px;
   width: 250px;
@@ -342,6 +346,7 @@ html {
   height: 100%;
   width: auto !important;
   margin: 0 auto;
+  border-radius: 15px;
 }
 #profileModal .profile-photo .profile-name {
   font-family: "Bai Jamjuree";
@@ -372,10 +377,10 @@ html {
   padding-left: 0px;
 }
 #profileModal .profile-photo .profile-social a {
-  color: #9B9B9B !important;
+  color: black !important;
 }
 #profileModal .profile-photo .profile-social a:hover {
-  color: #ef7daf !important;
+  color: white !important;
 }
 #profileModal ul a {
   color: black;
@@ -472,6 +477,10 @@ html {
   }
   #about {
     position: relative;
+    background-image: url('../images/background_about_50.png');
+    background-size: 650%;
+    background-position: bottom;
+    background-repeat: no-repeat;
   }
   #about .section-title {
     color: black;
@@ -508,6 +517,26 @@ html {
     transform: translateY(200px);
     transition-delay: 1s;
     animation: bottom-up-fade 1s forwards ease;
+  }
+  #profileModal .modal-dialog {
+    margin: 10px auto;
+    max-width: 90%;
+  }
+  #profileModal .profile-photo {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 0 25px 25px 25px;
+  }
+  #profileModal .profile-content {
+    background-color: white;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+  }
+  #profileModal .profile-content-text {
+    padding: 30px;
+    font-size: 1.125em;
   }
 }
 @media only screen and (min-width: 897px) {
@@ -612,5 +641,24 @@ html {
     transform: translateX(400px);
     transition-delay: 1s;
     animation: right-in-fade 1s forwards ease;
+  }
+  #profileModal .modal-dialog {
+    max-width: 976px;
+  }
+  #profileModal .profile-photo {
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 45px;
+  }
+  #profileModal .profile-content {
+    background-color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding-top: 15px;
+  }
+  #profileModal .profile-content-text {
+    padding: 100px 30px 0 30px;
+    font-size: 1.125em;
   }
 }

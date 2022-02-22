@@ -6,6 +6,7 @@
 @darkyellow: #C69C47;
 @sunshineyellow: #FFD967;
 @lightyellow: #F9F871;
+@green: #00B9AD;
 
 @fontbai: "Bai Jamjuree";
 @fontopen: "Open Sans";
@@ -312,12 +313,11 @@ html {
 }
 
 #nft {
-    background-image: url('../images/background_nft_50.png');
+    background-image: url('../images/background_nft.png');
     background-size: cover;
     background-position: center;
-
     padding-bottom: 35px;
-
+    color: white;
 }
 
 #team {
@@ -331,7 +331,6 @@ html {
     .profile-thumb{
         height: 200px;
         width: 200px;
-        border-radius: 100%;
         overflow: hidden;
         margin: 0 auto;
         cursor: pointer;
@@ -341,6 +340,7 @@ html {
     .profile-thumb img {
         display: block;
         height: 100%;
+        border-radius: 100%;
         width: auto !important;
         margin: 0 auto;
         -moz-transition: all .6s;
@@ -382,9 +382,7 @@ html {
             list-style-type: none;
             padding-left: 0px;
         }
-    }
 
-    .profile-social {
         hr {
             width: 50% !important;
             color: black;
@@ -402,7 +400,12 @@ html {
 
 #profileModal {
 
+    .modal-body {
+        padding: 0px;
+    }
+
     .profile-photo {
+
         .photo {
             height: 250px;
             width: 250px;
@@ -416,6 +419,7 @@ html {
                 height: 100%;
                 width: auto !important;
                 margin: 0 auto;
+                border-radius: 15px;
             }
         }
 
@@ -454,10 +458,10 @@ html {
             }
 
             a {
-                color: @lightgray !important;
+                color: black !important;
     
                 &:hover {
-                    color: @lightpink !important;
+                    color: white !important;
                 }
             }
         }
@@ -587,6 +591,10 @@ html {
 
     #about {
         position: relative;
+        background-image: url('../images/background_about_50.png');
+        background-size: 650%;
+        background-position: bottom;
+        background-repeat: no-repeat;
 
         .section-title {
             color: black;
@@ -630,6 +638,33 @@ html {
             transform: translateY(200px);
             transition-delay: 1s;
             animation: bottom-up-fade 1s forwards ease;
+        }
+    }
+
+    #profileModal {
+
+        .modal-dialog {
+            margin: 10px auto;
+            max-width: 90%;
+        }
+
+        .profile-photo {
+            background-color: white;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+            padding: 0 25px 25px 25px;
+        }
+
+        .profile-content {
+            background-color: white;
+            border-bottom-left-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-top: 15px;
+        }
+
+        .profile-content-text {
+            padding: 30px;
+            font-size: 1.125em;
         }
     }
 }
@@ -756,6 +791,32 @@ html {
             transform: translateX(400px);
             transition-delay: 1s;
             animation: right-in-fade 1s forwards ease;
+        }
+    }
+
+    #profileModal {
+
+        .modal-dialog {
+            max-width: 976px;
+        }
+
+        .profile-photo {
+            background-color: white;
+            border-top-left-radius: 15px;
+            border-bottom-left-radius: 15px;
+            padding: 45px;
+        }
+
+        .profile-content {
+            background-color: white;
+            border-top-right-radius: 15px;
+            border-bottom-right-radius: 15px;
+            padding-top: 15px;
+        }
+
+        .profile-content-text {
+            padding: 100px 30px 0 30px;
+            font-size: 1.125em;
         }
     }
 
