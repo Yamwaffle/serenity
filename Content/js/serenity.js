@@ -10,7 +10,7 @@ $(document).ready(function()
             $(".navbar-toggler").trigger("click");
         })
     });
-})
+});
 
 function reveal() {
     var reveals = document.querySelectorAll(".slide, .tokenomics-box, .extend-lines, .serenity-dots");
