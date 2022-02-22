@@ -60,7 +60,7 @@
                     <a class="nav-link" href="#serenityBody">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="Content/files//SerenityWhitepaper.pdf" target="_blank">Whitepaper</a>
+                    <a class="nav-link" href="Content/files/SerenityWhitepaper.pdf" target="_blank">Whitepaper</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#tokenomics">Tokenomics</a>
@@ -234,7 +234,7 @@
               <div class="col-md-6 col-sm-12 text-center square-gray square slide graphics">
                 <img src="Content/images/icon_graphics.png">
                 <br/>
-                <span class="heading-text artist-type text-center">Grahpic Designers</span>
+                <span class="heading-text artist-type text-center">Graphic Designers</span>
               </div>
               <div class="col-md-6 col-sm-12 text-center square-blue square slide talent">
                 <img src="Content/images/icon_talent.png">
@@ -295,7 +295,7 @@
           <div class="col-sm-12 col-md-3 text-center">
             <div class="row">
               <div class="col-sm-12 profile-holder">
-                  <div class="profile-thumb" onclick="javascript:openProfileModal('deion');"><img src="Content/images/deion_229_bw.png"></div>
+                  <div class="profile-thumb" onclick="javascript:openProfileModal('deion','#ef7daf');"><img src="Content/images/deion_229_bw.png"></div>
               </div>
               <div class="col-sm-12 profile-name">Deion Smith</div>
               <div class="col-sm-12 profile-designation">Creative Director</div>
@@ -310,7 +310,7 @@
           <div class="col-sm-12 col-md-3 text-center">
             <div class="row">
               <div class="col-sm-12 profile-holder">
-                  <div class="profile-thumb" onclick="javascript:openProfileModal('tambari');"><img src="Content/images/tambari_229_bw.png"></div>
+                  <div class="profile-thumb" onclick="javascript:openProfileModal('tambari','#00B9AD');"><img src="Content/images/tambari_229_bw.png"></div>
               </div>
               <div class="col-sm-12 profile-name">Tambari Pianwi</div>
               <div class="col-sm-12 profile-designation">Marketing Director</div>
@@ -325,7 +325,7 @@
           <div class="col-sm-12 col-md-3 text-center">
             <div class="row">
               <div class="col-sm-12 profile-holder">
-                  <div class="profile-thumb" onclick="javascript:openProfileModal('harley');"><img src="Content/images/harley_229_bw.png"></div>
+                  <div class="profile-thumb" onclick="javascript:openProfileModal('harley','#C69C47');"><img src="Content/images/harley_229_bw.png"></div>
               </div>
               <div class="col-sm-12 profile-name">Harley Woods</div>
               <div class="col-sm-12 profile-designation">Outreach Director</div>
@@ -340,7 +340,7 @@
           <div class="col-sm-12 col-md-3 text-center">
             <div class="row">
               <div class="col-sm-12 profile-holder">
-                  <div class="profile-thumb" onclick="javascript:openProfileModal('will');"><img src="Content/images/will_229_bw.png"></div>
+                  <div class="profile-thumb" onclick="javascript:openProfileModal('will', '#0086D9');"><img src="Content/images/will_229_bw.png"></div>
               </div>
               <div class="col-sm-12 profile-name">Will Schneider</div>
               <div class="col-sm-12 profile-designation">Operations Director</div>
@@ -352,6 +352,13 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-header">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 heading-text text-center section-title">Contact Us</div>
         </div>
       </div>
     </section>
@@ -383,12 +390,7 @@
           <div class="modal-content">
               <div class="modal-body">
                   <div class="row">
-                    <div class="col-md-12 d-none d-md-block">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
-                        </button>
-                    </div>
-                      <div class="col-md-7 col-sm-12 profile-photo">
+                      <div class="col-md-4 col-sm-12 profile-photo">
                           <div class="row">
                               <div class="col-sm-12 d-md-none d-lg-none d-xl-none" style="padding-right: 0px;">
                                   <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -403,8 +405,13 @@
                               </div>
                           </div>
                       </div>
-                      <div class="col-md-5 col-sm-12 profile-content">
+                      <div class="col-md-8 col-sm-12 profile-content">
                           <div class="row">
+                            <div class="col-md-12 d-none d-md-block">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            </div>
                               <div class="col-sm-12 profile-content-text"></div>
                               <div class="col-sm-12 d-md-none d-lg-none d-xl-none text-center" style="margin-bottom: 15px;">
                                   <button type="button" class="serenity-button-blue" data-dismiss="modal" aria-label="Close">
