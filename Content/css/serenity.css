@@ -464,6 +464,8 @@ html {
   }
   .section-title {
     font-size: 2em;
+    padding-top: 90px;
+    padding-bottom: 25px;
   }
   .section-subtitle {
     font-size: 1.75em;
@@ -485,7 +487,7 @@ html {
   #about {
     position: relative;
     background-image: url('../images/background_about_50.png');
-    background-size: 650%;
+    background-size: 700%;
     background-position: bottom;
     background-repeat: no-repeat;
   }
@@ -605,6 +607,7 @@ html {
   }
   .section-title {
     font-size: 4.5em;
+    padding-top: 80px;
   }
   .section-subtitle {
     font-size: 3em;
