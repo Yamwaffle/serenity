@@ -6,7 +6,7 @@
 @darkyellow: #C69C47;
 @sunshineyellow: #FFD967;
 @lightyellow: #F9F871;
-@green: #00B9AD;
+@lightgreen: #00B9AD;
 
 @fontbai: "Bai Jamjuree";
 @fontopen: "Open Sans";
@@ -180,12 +180,17 @@ html {
     }
 
     .square-green {
-        background-color: #008279;
+        background-color: @lightgreen;
         width: 100%;
     }
 
     .square-gray {
-        background-color: #999999;
+        background-color: @lightgray;
+        width: 100%;
+    }
+
+    .square-yellow {
+        background-color: @darkyellow;
         width: 100%;
     }
 }
@@ -505,6 +510,10 @@ html {
     -ms-transform: rotate(180deg);
     -o-transform: rotate(180deg);
     transform: rotate(180deg);
+}
+
+#contact {
+    background: linear-gradient(180deg, white 0%, #DDD7C6 50%);
 }
 
 

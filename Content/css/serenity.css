@@ -148,11 +148,15 @@ html {
   width: 100%;
 }
 #about .square-green {
-  background-color: #008279;
+  background-color: #00B9AD;
   width: 100%;
 }
 #about .square-gray {
-  background-color: #999999;
+  background-color: #9B9B9B;
+  width: 100%;
+}
+#about .square-yellow {
+  background-color: #C69C47;
   width: 100%;
 }
 .serenity-button-pink {
@@ -413,6 +417,9 @@ html {
   -ms-transform: rotate(180deg);
   -o-transform: rotate(180deg);
   transform: rotate(180deg);
+}
+#contact {
+  background: linear-gradient(180deg, white 0%, #DDD7C6 50%);
 }
 @media only screen and (max-width: 896px) {
   #serenity-navbar video {
