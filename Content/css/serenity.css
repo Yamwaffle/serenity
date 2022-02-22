@@ -231,6 +231,7 @@ html {
   opacity: 0;
 }
 .serenity-dots.active {
+  will-change: transform;
   transition-delay: 1s;
   animation: fading-in 2s forwards ease;
 }
@@ -253,6 +254,7 @@ html {
   opacity: 0;
 }
 #tokenomics .tokenomics-box.active {
+  will-change: transform;
   transition-delay: 1s;
   animation: fading-in 2s forwards ease;
 }
@@ -260,6 +262,7 @@ html {
   opacity: 0;
 }
 #tokenomics .extend-lines.active {
+  will-change: transform;
   transition-delay: 1s;
   animation: fading-in 2s forwards ease;
 }
