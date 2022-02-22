@@ -35,6 +35,7 @@ function openVideo() {
 function openProfileModal(person, backColor) {
 
     $("#profileModal .profile-photo .photo").html("<img src='Content/images/" + person + "_525.png'>");
+    $("#profileModal .profile-photo").css("background-color", backColor);
 
     if(person == 'deion')
     {
