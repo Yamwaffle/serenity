@@ -2,6 +2,10 @@ html {
   font-family: "Open Sans";
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
 }
 #background-video {
   width: 100%;
@@ -51,6 +55,12 @@ html {
 }
 .description-text {
   font-family: "Open Sans", sans-serif !important;
+}
+.fa-15x {
+  font-size: 1.5em;
+}
+.fa-125x {
+  font-size: 1.25em;
 }
 #topHeader .heading-text {
   color: white;
@@ -324,6 +334,8 @@ html {
   padding-left: 0px;
 }
 #team .profile-social li {
+  display: inline-block;
+  margin: 0 15px;
   list-style-type: none;
   padding-left: 0px;
 }
@@ -333,6 +345,7 @@ html {
 }
 #team .profile-social a {
   color: #9B9B9B !important;
+  cursor: pointer;
 }
 #team .profile-social a:hover {
   color: #ef7daf !important;
@@ -534,6 +547,9 @@ html {
     transform: translateY(200px);
     transition-delay: 1s;
     animation: bottom-up-fade 1s forwards ease;
+  }
+  #team .profile-social {
+    margin-bottom: 50px;
   }
   #profileModal .modal-dialog {
     margin: 10px auto;

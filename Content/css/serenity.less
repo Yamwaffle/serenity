@@ -18,6 +18,11 @@ html {
     font-family: @fontopen;
     font-size: 16px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 #background-video {
@@ -72,6 +77,14 @@ html {
 
 .description-text {
     font-family: @fontopen, sans-serif !important;
+}
+
+.fa-15x {
+    font-size: 1.5em;
+}
+
+.fa-125x {
+    font-size: 1.25em;
 }
 
 #topHeader {
@@ -387,6 +400,8 @@ html {
         }
 
         li {
+            display: inline-block;
+            margin: 0 15px;
             list-style-type: none;
             padding-left: 0px;
         }
@@ -398,6 +413,7 @@ html {
 
         a {
             color: @lightgray !important;
+            cursor: pointer;
 
             &:hover {
                 color: @lightpink !important;
@@ -658,6 +674,12 @@ html {
             transform: translateY(200px);
             transition-delay: 1s;
             animation: bottom-up-fade 1s forwards ease;
+        }
+    }
+
+    #team {
+        .profile-social {
+            margin-bottom: 50px;
         }
     }
 
