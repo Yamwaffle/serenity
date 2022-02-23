@@ -5,13 +5,22 @@ var ready = (callback) => {
 
 $(document).ready(function()
 {
+    // toggles the mobile menu when clicked
     $(".nav-link").each(function() {
         $(this).click(function() {
             $(".navbar-toggler").trigger("click");
         })
     });
+
+    // activating flickity carousel for roadmap
+    $('.main-gallery').flickity({
+        cellAlign: 'left',
+        contain: true
+    });
 });
 
+
+// this is to activate transition animation when it is visible on screen
 function reveal() {
     var reveals = document.querySelectorAll(".slide, .tokenomics-box, .extend-lines, .serenity-dots");
 
@@ -25,9 +34,11 @@ function reveal() {
         }
     }
 }
-  
 window.addEventListener("scroll", reveal);
 
+
+
+// modals
 function openVideo() {
     $("#videoModal").modal('show');
 }
