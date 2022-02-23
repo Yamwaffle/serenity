@@ -1,12 +1,14 @@
 @lightpink: #ef7daf;
 @darkpink: #e52f7f;
 @lightgray: #9B9B9B;
+@darkgray: #5B5B5B;
 @blue: #0086D9;
 @lightblue: #59a6d6;
+@lightyellow: #F9F871;
 @darkyellow: #C69C47;
 @sunshineyellow: #FFD967;
-@lightyellow: #F9F871;
 @lightgreen: #00B9AD;
+@lightbrown: #8C6911;
 
 @fontbai: "Bai Jamjuree";
 @fontopen: "Open Sans";
@@ -23,6 +25,7 @@ html {
 
 body {
   overflow-x: hidden;
+  font: @fontopen;
 }
 
 #background-video {
@@ -333,6 +336,34 @@ body {
     }
 }
 
+#roadmap {
+    background: linear-gradient(180deg, #B4B4B4 0%, white 100%);
+
+    .growth-step {
+        font-weight: 600;
+        font-size: 1.5em;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0px;
+    }
+
+    li {
+        list-style-type: none;
+        padding-left: 0px;
+        padding-top: 10px;
+    }
+
+    .fa-check {
+        color: @lightgreen;
+    }
+
+    .fa-spinner {
+        color: @blue;
+    }
+}
+
 #nft {
     background-image: url('../images/background_nft.png');
     background-size: cover;
@@ -408,7 +439,7 @@ body {
 
         hr {
             width: 50% !important;
-            color: black;
+            color: @darkgray;
         }
 
         a {
@@ -455,7 +486,7 @@ body {
             line-height: 32px;
             text-align: center;
             font-feature-settings: 'liga' off;
-            color: #000000;
+            color: white;
         }
     
         .profile-designation {
@@ -466,7 +497,7 @@ body {
             line-height: 28px;
             text-align: center;
             font-feature-settings: 'liga' off;
-            color: #000000;
+            color: white;
         }
 
         .profile-social {
@@ -482,27 +513,27 @@ body {
             }
 
             a {
-                color: black !important;
+                color: white !important;
     
                 &:hover {
-                    color: white !important;
+                    color: @lightgray !important;
                 }
             }
         }
     }
     
     ul a {
-        color: black;
+        color: white;
         cursor: pointer;
     }
     
     .profile-social hr {
-        border: 1px solid #5B5B5B;
+        color: @darkgray;
         width: 80% !important;
     }
     
     ul a:hover {
-        color: white!important;
+        color: @lightgray !important;
     }
 }
 

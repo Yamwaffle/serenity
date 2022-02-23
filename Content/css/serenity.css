@@ -6,6 +6,7 @@ html {
 }
 body {
   overflow-x: hidden;
+  font: "Open Sans";
 }
 #background-video {
   width: 100%;
@@ -276,6 +277,28 @@ body {
   transition-delay: 1s;
   animation: fading-in 2s forwards ease;
 }
+#roadmap {
+  background: linear-gradient(180deg, #B4B4B4 0%, white 100%);
+}
+#roadmap .growth-step {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+#roadmap ul {
+  list-style-type: none;
+  padding-left: 0px;
+}
+#roadmap li {
+  list-style-type: none;
+  padding-left: 0px;
+  padding-top: 10px;
+}
+#roadmap .fa-check {
+  color: #00B9AD;
+}
+#roadmap .fa-spinner {
+  color: #0086D9;
+}
 #nft {
   background-image: url('../images/background_nft.png');
   background-size: cover;
@@ -341,7 +364,7 @@ body {
 }
 #team .profile-social hr {
   width: 50% !important;
-  color: black;
+  color: #5B5B5B;
 }
 #team .profile-social a {
   color: #9B9B9B !important;
@@ -376,7 +399,7 @@ body {
   line-height: 32px;
   text-align: center;
   font-feature-settings: 'liga' off;
-  color: #000000;
+  color: white;
 }
 #profileModal .profile-photo .profile-designation {
   font-family: "Open Sans";
@@ -386,7 +409,7 @@ body {
   line-height: 28px;
   text-align: center;
   font-feature-settings: 'liga' off;
-  color: #000000;
+  color: white;
 }
 #profileModal .profile-photo .profile-social ul {
   list-style-type: none;
@@ -397,21 +420,21 @@ body {
   padding-left: 0px;
 }
 #profileModal .profile-photo .profile-social a {
-  color: black !important;
-}
-#profileModal .profile-photo .profile-social a:hover {
   color: white !important;
 }
+#profileModal .profile-photo .profile-social a:hover {
+  color: #9B9B9B !important;
+}
 #profileModal ul a {
-  color: black;
+  color: white;
   cursor: pointer;
 }
 #profileModal .profile-social hr {
-  border: 1px solid #5B5B5B;
+  color: #5B5B5B;
   width: 80% !important;
 }
 #profileModal ul a:hover {
-  color: white!important;
+  color: #9B9B9B !important;
 }
 .contract-address {
   background-color: rgba(0, 0, 0, 0.1);
