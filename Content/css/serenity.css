@@ -77,7 +77,7 @@ body {
 }
 #topHeader li {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0 5px;
   text-align: center;
 }
 #topHeader li a {
