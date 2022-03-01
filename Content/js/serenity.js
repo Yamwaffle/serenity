@@ -11,12 +11,6 @@ $(document).ready(function()
             $(".navbar-toggler").trigger("click");
         })
     });
-
-    // activating flickity carousel for roadmap
-    $('.main-gallery').flickity({
-        cellAlign: 'left',
-        contain: true
-    });
 });
 
 
