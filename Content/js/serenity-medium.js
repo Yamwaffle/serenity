@@ -11,7 +11,7 @@ $(function () {
                 $.each(response.items, function (k, item) {
                     display += '<div class="card mb-3 mx-auto mr-5" style="width: 17rem;">';
                     var src = item["thumbnail"]; // use thumbnail url
-                    display += '<img src="' + src + '" class="card-img-top" alt="Cover image">';
+                    display += '<img src="' + src + '" class="card-img-top" style="object-fit: cover; height: 150px;" alt="Cover image">';
                     display += '<div class="card-body">';
                     display += '<h5 class="card-title"><a href="' + item.link + '">' + item.title + '</a></h5>';
                     var yourString = item.description.replace(/<img[^>]*>/g,""); //replace with your string.
