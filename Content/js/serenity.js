@@ -42,26 +42,12 @@ function openProfileModal(person, backColor) {
     $("#profileModal .profile-photo .photo").html("<img src='Content/images/" + person + "_525.png'>");
     $("#profileModal .profile-photo").css("background-color", backColor);
 
-    if(person == 'deion')
+    if(person == 'tambari')
     {
         $("#profileModal .profile-photo .profile-info").html(
-            '<div class="col-sm-12 profile-name">Deion Smith</div>' +
-            '<div class="col-sm-12 profile-designation">Creative Director</div>' +
-            '<div class="col-sm-12 profile-social text-center">' +
-                '<hr>' +
-                '<ul>' +
-                    '<li><a href="https://t.me/RavenCryptokiddd" title="Telegram" target="_blank"><i class="fab fa-telegram fa-3x"></i></a></li>' +
-                '</ul>' +
-            '</div>'
-        );
-        $("#profileModal .profile-content-text").html("Deion is an avid crypto investor with a special interest in NFTs and the process behind their creation. His focus is sourcing the best independent artists and working closely with them to fuse Serenity's creative vision with their innate talent.");
-    }
-    else if(person == 'tambari')
-    {
-        $("#profileModal .profile-photo .profile-info").html(
-            '<div class="col-sm-12 profile-name">Tambari Pianwi</div>' +
-            '<div class="col-sm-12 profile-designation">Marketing Director</div>' +
-            '<div class="col-sm-12 profile-social text-center">' +
+            '<div class="col-12 profile-name">Tambari Pianwi</div>' +
+            '<div class="col-12 profile-designation">CMO - Chief Marketing Officer</div>' +
+            '<div class="col-12 profile-social text-center">' +
                 '<hr>' +
                 '<ul>' +
                     '<li><a href="https://t.me/BossBari" title="Telegram" target="_blank"><i class="fab fa-telegram fa-3x"></i></a></li>' +
@@ -70,26 +56,26 @@ function openProfileModal(person, backColor) {
         );
         $("#profileModal .profile-content-text").html("Tambari is a marketing professional with a diploma from Cornell University. He is the grassroots powerhouse that helps keep the community building and strong every day, through his powerful words, overwhelming positivity and genuine appreciation of everyone he interacts with.");
     }
-    else if(person == 'harley')
+    else if(person == 'aris')
     {
         $("#profileModal .profile-photo .profile-info").html(
-            '<div class="col-sm-12 profile-name">Harley Woods</div>' +
-            '<div class="col-sm-12 profile-designation">Outreach Director</div>' +
-            '<div class="col-sm-12 profile-social text-center">' +
+            '<div class="col-12 profile-name">Aris Cuevo</div>' +
+            '<div class="col-12 profile-designation">COO - Chief Operating Officer</div>' +
+            '<div class="col-12 profile-social text-center">' +
                 '<hr>' +
                 '<ul>' +
-                    '<li><a href="https://t.me/KilluaCrypto" title="Telegram" target="_blank"><i class="fab fa-telegram fa-3x"></i></a></li>' +
+                    '<li><a href="https://t.me/mobileZ50" title="Telegram" target="_blank"><i class="fab fa-telegram fa-3x"></i></a></li>' +
                 '</ul>' +
             '</div>'
         );
-        $("#profileModal .profile-content-text").html("Harley is an experienced investor with experience managing a variety of social media platforms. He is primarily focused on keeping the Serenity social media presence alive and well. He embodies the ideals of the project with his calm demeanor, heartfelt style, and creative passion.");
+        $("#profileModal .profile-content-text").html("Aris is a business professional with over 20 years of experience in health care. He helps operate all business operations from HR, to accounting, to payroll.");
     }
     else if(person == 'will')
     {
         $("#profileModal .profile-photo .profile-info").html(
-            '<div class="col-sm-12 profile-name">Will Schneider</div>' +
-            '<div class="col-sm-12 profile-designation">Operations Director</div>' +
-            '<div class="col-sm-12 profile-social text-center">' +
+            '<div class="col-12 profile-name">Will Schneider</div>' +
+            '<div class="col-12 profile-designation">CEO - Chief Technical Officer</div>' +
+            '<div class="col-12 profile-social text-center">' +
                 '<hr>' +
                 '<ul>' +
                     '<li><a href="https://t.me/oni_o_n" title="Telegram" target="_blank"><i class="fab fa-telegram fa-3x"></i></a></li>' +
